@@ -1,0 +1,137 @@
+/* Gaya Umum untuk Semua Halaman */
+body {
+    background-color: #f5f5dc; /* Warna cream untuk semua halaman */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #6b4423; /* Warna coklat tua untuk heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #6b4423;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Gaya untuk Form (Login, Register, Tambah Menu) */
+form {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #fff8dc; /* Warna cream lebih terang untuk form */
+    border: 1px solid #6b4423;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px 0;
+    color: #6b4423; /* Warna coklat untuk label */
+}
+
+input[type="text"], input[type="password"], input[type="number"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #6b4423; /* Border coklat */
+    border-radius: 5px;
+    background-color: #fff8dc; /* Warna cream untuk input */
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6b4423;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #8b5742;
+}
+
+/* Gaya untuk Tabel di Halaman Utama dan Detail */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+table, th, td {
+    border: 1px solid #6b4423; /* Border coklat tua */
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #d2b48c; /* Warna coklat muda */
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fff8dc; /* Warna cream */
+}
+
+img {
+    width: 300px; /* Ukuran gambar untuk halaman detail */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Link Kembali */
+.back-link {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 16px;
+}
+
+/* Spesifik untuk Halaman Login & Register */
+.login-container, .register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff8dc; /* Warna cream lebih terang */
+    border: 1px solid #6b4423; /* Border coklat tua */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1, .register-container h1 {
+    margin-bottom: 20px;
+}
+
+/* Halaman Tambah Menu */
+.add-menu-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff8dc; /* Warna cream */
+    border: 1px solid #6b4423;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-menu-container h1 {
+    margin-bottom: 20px;
+}
