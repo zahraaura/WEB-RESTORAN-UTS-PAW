@@ -2,11 +2,12 @@
 include 'config.php';
 session_start();
 if (!isset($_SESSION['username'])) {
+    // Jika pengguna belum login, arahkan kembali ke login.php
     header("Location: login.php");
     exit;
 }
 
-// Ambil data menu dari database
+// Query untuk menampilkan semua data menu dari database
 $sql = "SELECT * FROM menu";
 $result = $conn->query($sql);
 ?>

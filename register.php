@@ -3,7 +3,7 @@ include 'config.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
-    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    $password = $_POST['password']; // Menyimpan password langsung
 
     $sql = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
 

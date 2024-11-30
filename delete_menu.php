@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])) {
 }
 
 $id = $_GET['id'];
-$sql = "DELETE FROM menu WHERE id=$id";
+$sql = "DELETE FROM menu WHERE id=$id";//Query untuk menghapus data dari database berdasarkan id
 
 if ($conn->query($sql) === TRUE) {
     header("Location: index.php");

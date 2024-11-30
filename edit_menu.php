@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])) {
 }
 
 $id = $_GET['id'];
-$sql = "SELECT * FROM menu WHERE id=$id";
+$sql = "SELECT * FROM menu WHERE id=$id";//Query untuk menampilkan data yang akan diubah berdasarkan id dan kemudian mengupdate data tersebut
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 

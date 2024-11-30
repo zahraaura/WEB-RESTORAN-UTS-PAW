@@ -12,7 +12,7 @@
 
     if (isset($_GET['id'])) {
         $id = $_GET['id'];
-        $sql = "SELECT * FROM menu WHERE id=$id";
+        $sql = "SELECT * FROM menu WHERE id=$id"; //Query untuk menampilkan detail satu menu berdasarkan id
         $result = mysqli_query($conn, $sql);
 
         if ($result->num_rows > 0) {
